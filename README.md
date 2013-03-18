@@ -54,4 +54,10 @@ To access LabSenseVM, ssh with nesl@128.97.93.90 and use one of the standard pas
 
 Currently, the serializer.js file is running on LabSenseVM for the Veris and Eaton meters. The serializer is renamed veris_serializer.js and eaton_serializer.js. 
 
+The serializer breaks occasionally when an exception is thrown.
+Therefore, the Veris and Eaton meters run the serializer with a script file that restarts the multiplexer whenever it fails. The script is called init.sh and can be run like so:
+    <pre>
+    ./init.sh
+    </pre>
+
 See [NESL Wiki](https://sites.google.com/a/nesl.info/internal/resources/power-panel-monitor) for more information.
