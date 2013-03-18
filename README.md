@@ -36,14 +36,15 @@ To keep the serializer running after logging out of ssh, use screen:
 	screen -S [Name_of_screen_session]
 	node serializer.js
 	</pre>
+
 	To detach from the screen session press: Ctrl-a, Ctrl-d in succession. 
-	
 	To attach to a screen session again type:
+
 	<pre>
 	screen -r [Name_of_screen_session]
 	</pre>
 
-	Running the command without the name with give all the names of the screen sessions.
+	Running the command without the name will give all the names of the screen sessions.
 
 Where it's used
 ==============
